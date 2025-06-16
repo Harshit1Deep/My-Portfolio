@@ -8,13 +8,6 @@ html{
     scroll-behavior: smooth;
 }
 
-@media (max-width: 600px) {
-    body {
-        flex-direction: column;
-        height: auto;
-        padding: 10px;
-    }
-}
 
 
 header
@@ -467,9 +460,105 @@ ul{
 .b4:hover{
     background-color: aqua;
 }
+@media (max-width: 600px) {
+    header, nav, ul, .content, .works, .parent {
+        flex-direction: column;
+        align-items: center;
+    }
 
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px 0;
+    }
 
-/* <i class="fa-brands fa-linkedin" style="color: #63E6BE;"></i> */
-/* <i class="fa-brands fa-github" style="color: #63E6BE;"></i> */
-/* <i class="fa-brands fa-hackerrank" style="color: #63E6BE;"></i> */
-/* <i class="fa-solid fa-envelope" style="color: #63E6BE;"></i> */
+    nav > h2 {
+        padding-left: 0;
+        font-size: 24px;
+        margin-bottom: 10px;
+    }
+
+    li {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    ul {
+        flex-direction: column;
+        padding-left: 0;
+    }
+
+    ul > button {
+        margin: 10px 0;
+    }
+
+    .short {
+        font-size: 30px;
+        left: 20px;
+        top: 120px;
+    }
+
+    .long {
+        font-size: 16px;
+        padding-top: 250px;
+        padding-left: 20px;
+    }
+
+    .hire, .download {
+        margin: 20px 10px;
+        width: 90%;
+    }
+
+    .right > img {
+        width: 250px;
+        height: 250px;
+        left: 50%;
+        transform: translateX(-50%);
+        top: 350px;
+    }
+
+    .work1, .work2, .work3 {
+        width: 80%;
+        margin: 20px 0;
+    }
+
+    .task1, .task2 {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .task2 > input {
+        width: 100%;
+    }
+
+    .message1 > input {
+        height: 200px;
+        padding-bottom: 100px;
+    }
+
+    .icon > button,
+    .b1, .b2, .b3, .b4 {
+        width: 60px;
+        height: 60px;
+        margin-left: 20px;
+        margin-top: 20px;
+    }
+
+    .icon1 {
+        margin-left: 0;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    footer {
+        height: auto;
+        padding: 20px;
+        text-align: center;
+    }
+
+    .h61 > h6 {
+        font-size: 16px;
+    }
+}
+
