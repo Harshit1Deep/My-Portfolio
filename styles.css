@@ -8,6 +8,15 @@ html{
     scroll-behavior: smooth;
 }
 
+@media (max-width: 600px) {
+    nav {
+        flex-direction: column;
+        height: auto;
+        padding: 10px;
+    }
+}
+
+
 header
 {
     display: flex;
