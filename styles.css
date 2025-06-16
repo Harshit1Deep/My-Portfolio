@@ -9,22 +9,13 @@ html{
 }
 
 
-
-header
-{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    position: sticky;
-    top: 0;
-    background-color: white;
-}
-
 nav{
-    /* border: 2px solid black; */
-    width: 100%;
+    width: 95rem;
     height: 80px;
     display: flex;
+    background-color: aqua;
+    position: sticky;
+    top: 0;
 }
 nav>h2{
     display: flex;
@@ -44,7 +35,8 @@ li{
     align-items: center;
     justify-items: center;
     justify-content: space-evenly;
-    margin-left: 180px;
+    margin-left: 100px;
+    margin-bottom:15px ;
 }
 li>a{
     text-decoration: none;
@@ -57,8 +49,8 @@ li>a:hover{
 
 ul>button{
     margin-left: 180px;
-    margin-top: 15px;
-    margin-bottom: 15px;
+    margin-top: 0px;
+    margin-bottom: 28px;
     cursor: pointer;
     padding-left: 5px;
     padding-right: 5px;
@@ -460,3 +452,6 @@ ul{
 .b4:hover{
     background-color: aqua;
 }
+
+
+
