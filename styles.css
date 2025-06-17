@@ -10,7 +10,8 @@ html{
 
 
 nav{
-    width: 95rem;
+    width: 100%;
+    flex-wrap: wrap;
     height: 80px;
     display: flex;
     background-color: aqua;
@@ -454,37 +455,130 @@ ul{
 }
 
 
+
 @media screen and (max-width: 768px) {
-
-
     nav {
         flex-direction: column;
-        align-items : flex-start;
-        padding :10px;
-        width: 100%;
+        align-items: center;
+        height: auto;
     }
 
-    nav a {
-        padding: 10px 0;
+    ul {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    li {
+        margin: 10px 0;
+    }
+
+    ul > button {
+        margin: 20px auto;
+    }
+
+    .works {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .work1, .work2, .work3 {
+        width: 80%;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .content1, .content2 {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .parent {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .task1, .task2 {
+        width: 90%;
+        margin: 20px 0;
+    }
+
+    .right > img {
+        position: static;
+        width: 250px;
+        height: auto;
+        margin: 0 auto;
         display: block;
-        width: 100%;
+    }
+
+    .short, .long {
+        padding-left: 20px;
+        padding-right: 20px;
+        font-size: 30px;
+    }
+
+    .icon > button {
+        margin-left: 20px;
+        margin-top: 20px;
     }
 }
+
 
 @media screen and (max-width: 480px) {
     body {
         font-size: 14px;
     }
 
+    nav h2 {
+        padding-left: 20px;
+        font-size: 24px;
+    }
 
     nav {
-        font-size: 16px;
         padding: 8px;
     }
 
-    nav a {
+    li > a {
+        font-size: 18px;
+    }
+
+    .hire, .download {
+        width: 90%;
+        margin: 10px auto;
+        display: block;
+    }
+
+    .right > img {
+        width: 200px;
+    }
+
+    .work {
+        font-size: 30px;
+    }
+
+    .task1, .task2 input, .message1 > input {
+        width: 100%;
+    }
+
+    footer {
+        height: auto;
+    }
+
+    .icon1 {
+        margin-left: 0;
         text-align: center;
     }
+
+    .b1, .b2, .b3, .b4 {
+        width: 60px;
+        height: 60px;
+        margin: 10px;
+    }
 }
+
 
 
