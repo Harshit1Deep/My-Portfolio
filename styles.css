@@ -1,124 +1,126 @@
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: sans-serif;
 }
-html{
+
+html {
     scroll-behavior: smooth;
 }
 
-
-nav{
-    width: 100%;
-    flex-wrap: wrap;
+nav {
+    width: 100%; /* changed from 95rem to 100% */
     height: 80px;
     display: flex;
     background-color: aqua;
     position: sticky;
     top: 0;
+    flex-wrap: wrap;
 }
-nav>h2{
+
+nav > h2 {
     display: flex;
     align-items: center;
     padding-left: 80px;
     font-size: 30px;
     font-weight: 900;
-    color:rgb(30, 159, 171);
+    color: rgb(30, 159, 171);
 }
 
-ul{
+ul {
     display: flex;
-    list-style-type:none;
+    list-style-type: none;
 }
-li{
+
+li {
     display: flex;
     align-items: center;
-    justify-items: center;
     justify-content: space-evenly;
     margin-left: 100px;
-    margin-bottom:15px ;
+    margin-bottom: 15px;
 }
-li>a{
+
+li > a {
     text-decoration: none;
     color: black;
     font-size: 20px;
 }
-li>a:hover{
+
+li > a:hover {
     color: purple;
 }
 
-ul>button{
+ul > button {
     margin-left: 180px;
     margin-top: 0px;
     margin-bottom: 28px;
     cursor: pointer;
     padding-left: 5px;
     padding-right: 5px;
-    background-color:lightgrey;
+    background-color: lightgrey;
     color: #000;
     border-radius: 10px;
     border: none;
     width: 140px;
 }
-ul>button:hover{
+
+ul > button:hover {
     background-color: gray;
 }
 
-
-
-section{
+section {
     width: 100%;
     height: 900px;
-
 }
 
-#Main{
+#Main {
     background-color: white;
     display: flex;
     position: relative;
 }
-.box{
+
+.box {
     font-size: 15px;
     width: 100px;
     height: 30px;
-    /* border: 2px solid black; */
     text-align: center;
     padding-top: 5px;
     background-color: rgb(209, 145, 6);
     border-radius: 10px;
     color: white;
-    position:absolute;
+    position: absolute;
     top: 90px;
     left: 120px;
 }
-.text{
+
+.text {
     position: relative;
-    width: 100%;
-    height: 60%;
-    /* border: 2px solid black; */
+    width: 60%;
+    height: auto;
 }
 
-.short{
+.short {
     position: absolute;
     top: 150px;
     left: 120px;
     font-size: 50px;
     font-weight: bolder;
 }
-.long{
+
+.long {
     font-size: 20px;
     padding-top: 300px;
     padding-left: 120px;
 }
 
-.text>button{
+.text > button {
     border-radius: 15px;
     font-size: 20px;
     font-weight: bold;
 }
 
-.hire{
+.hire {
     background-color: purple;
     color: white;
     margin-left: 110px;
@@ -128,41 +130,48 @@ section{
     border: none;
     font-weight: bold;
 }
-.hire:hover{
+
+.hire:hover {
     background-color: blueviolet;
 }
-.download{
-    background-color:lightgrey;
+
+.download {
+    background-color: lightgrey;
     color: #000;
     width: 170px;
     height: 50px;
     margin-left: 20px;
     border: none;
 }
-.download:hover{
+
+.download:hover {
     background-color: gray;
 }
 
-.icon{
-    /* border: 2px solid black; */
+.icon {
     width: 100%;
     height: 20%;
     margin-top: 10px;
 }
-.icon>button{
+
+.icon > button {
     margin-left: 100px;
     margin-top: 60px;
     width: 70px;
     height: 70px;
-    border-radius: 50%;   
+    border-radius: 50%;
 }
-.icon>button:hover{
+
+.icon > button:hover {
     background-color: aqua;
 }
-.right{
+
+.right {
     position: relative;
+    width: 40%;
 }
-.right>img{
+
+.right > img {
     position: absolute;
     top: 160px;
     left: 260px;
@@ -172,29 +181,27 @@ section{
     background-size: cover;
 }
 
-
-#About{
+#About {
     background-color: white;
-    /* border: 2px solid black; */
     display: flex;
     position: relative;
-
 }
 
-.content{
+.content {
     display: flex;
     margin-top: 100px;
 }
-.content1{
+
+.content1 {
     width: 50%;
     height: 60%;
-    /* border: 2px solid black; */
     text-align: center;
     background-color: antiquewhite;
     border-radius: 20px;
     padding-top: 30px;
 }
-.content1>button{
+
+.content1 > button {
     width: 150px;
     height: 40px;
     border-radius: 20px;
@@ -202,33 +209,25 @@ section{
     color: white;
     font-weight: bold;
     margin-top: 20px;
-
 }
-.content1>button:hover{
+
+.content1 > button:hover {
     background-color: blueviolet;
 }
 
-.content2{
+.content2 {
     width: 50%;
     height: 60%;
-    /* border: 2px solid black; */
     display: flex;
     background-color: white;
 }
 
-.first{
+.first, .second, .third {
     margin-top: 30px;
     margin-left: 50px;
 }
-.second{
-    margin-top: 30px;
-    margin-left: 50px;
-}
-.third{
-    margin-top: 30px;
-    margin-left: 50px;
-}
-.first>button{
+
+.first > button, .second > button, .third > button {
     border-radius: 15px;
     width: 80px;
     height: 30px;
@@ -237,141 +236,91 @@ section{
     margin-top: 20px;
 }
 
-.second>button{
-    border-radius: 15px;
-    width: 80px;
-    height: 30px;
-    background-color: purple;
-    color: white;
-    margin-top: 20px;
-}
-
-.third>button{
-    border-radius: 15px;
-    width: 80px;
-    height: 30px;
-    background-color: purple;
-    color: white;
-    margin-top: 20px;
-}
-
-
-
-
-
-#Projects{
+#Projects {
     background-color: white;
 }
-.work{
+
+.work {
     width: 100%;
     height: 50px;
-    text-align: center ;
+    text-align: center;
     font-size: 50px;
 }
-.works{
+
+.works {
     display: flex;
     margin-top: 100px;
 }
-.work1{
+
+.work1, .work2, .work3 {
     width: 30%;
     height: 450px;
-    /* border: 2px solid black; */
     text-align: center;
     background-color: pink;
     border-radius: 20px;
     padding-top: 50px;
     margin-left: 40px;
+}
 
-}
-.work2{
-    width: 30%;
-    height: 450px;
-    /* border: 2px solid black; */
-    text-align: center;
-    background-color: pink;
-    border-radius: 20px;
-    padding-top: 50px;
-    margin-left: 40px;
-
-}
-.work3{
-    width: 30%;
-    height: 450px;
-    /* border: 2px solid black; */
-    text-align: center;
-    background-color: pink;
-    border-radius: 20px;
-    padding-top: 50px;
-    margin-left: 40px;
-
-}
-.work1>p{
-    font-size: 20px;
-    padding-top: 30px;
-}
-.work2>p{
-    font-size: 20px;
-    padding-top: 30px;
-}
-.work3>p{
+.work1 > p, .work2 > p, .work3 > p {
     font-size: 20px;
     padding-top: 30px;
 }
 
-
-
-#Contact{
+#Contact {
     background-color: white;
 }
 
-.task{
+.task {
     width: 100%;
     height: 50px;
     text-align: center;
     font-size: 50px;
-
 }
-.parent{
+
+.parent {
     display: flex;
     margin-top: 140px;
 }
 
-.task1{
+.task1 {
     width: 40%;
     height: 600px;
     background-color: rgb(30, 159, 171);
     color: white;
     text-align: center;
     font-size: 20px;
-    /* border: 2px solid black; */
     border-radius: 20px;
     margin-left: 100px;
 }
-.task1>h2{
+
+.task1 > h2 {
     padding-top: 90px;
 }
 
-.task2{
-    /* border: 2px solid black; */
+.task2 {
     width: 40%;
     height: 600px;
     margin-left: 120px;
 }
-.task2>button{
+
+.task2 > button {
     width: 90px;
     height: 40px;
     border-radius: 12px;
     border: none;
     margin-top: 10px;
 }
-.task2>input{
+
+.task2 > input {
     width: 330px;
     height: 50px;
     font-size: 20px;
     border-radius: 20px;
     padding-left: 20px;
 }
-.message1>input{
+
+.message1 > input {
     width: 100%;
     height: 540px;
     border-radius: 20px;
@@ -381,80 +330,52 @@ section{
     font-size: 20px;
 }
 
-
-::-webkit-scrollbar{
+::-webkit-scrollbar {
     display: none;
 }
 
-
-footer{
+footer {
     border: 2px solid black;
     width: 100%;
     height: 250px;
     align-items: center;
     justify-content: center;
-
 }
-.h61>h6{
+
+.h61 > h6 {
     text-align: center;
     font-size: 20px;
 }
-ul{
+
+ul {
     padding-top: 20px;
     padding-left: 200px;
 }
-.icon1{
+
+.icon1 {
     margin-left: 20%;
     margin-top: 50px;
 }
 
-.b1{
+.b1, .b2, .b3, .b4 {
     margin-left: 100px;
     border-radius: 50%;
     width: 90px;
     height: 80px;
 }
 
-.b2{
-    margin-left: 100px;
-    border-radius: 50%;
-    width: 90px;
-    height: 80px;
-
+.b1:hover, .b2:hover, .b3:hover, .b4:hover {
+    background-color: aqua;
 }
 
-.b3{
-    margin-left: 100px;
-    border-radius: 50%;
-    width: 90px;
-    height: 80px;
-
-}
-.b4{
-    margin-left: 100px;
-    border-radius: 50%;
-    width: 90px;
-    height: 80px;
-
-}
-#p1{
+#p1 {
     text-align: center;
     margin-top: 20px;
 }
-.b1:hover{
-    background-color: aqua;
-}
-.b2:hover{
-    background-color: aqua;
-}
-.b3:hover{
-    background-color: aqua;
-}
-.b4:hover{
-    background-color: aqua;
-}
 
-
+/* =========================== */
+/* MEDIA QUERIES */
+/* =========================== */
 
 @media screen and (max-width: 768px) {
     nav {
@@ -507,26 +428,42 @@ ul{
         margin: 20px 0;
     }
 
+    #Main {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .text, .right {
+        width: 100%;
+        position: static;
+        text-align: center;
+    }
+
+    .short {
+        position: static;
+        font-size: 30px;
+        margin-top: 20px;
+    }
+
+    .long {
+        padding: 20px;
+        font-size: 16px;
+    }
+
+    .hire, .download {
+        margin: 20px auto;
+        display: block;
+    }
+
     .right > img {
         position: static;
         width: 250px;
         height: auto;
-        margin: 0 auto;
+        margin: 20px auto;
         display: block;
     }
-
-    .short, .long {
-        padding-left: 20px;
-        padding-right: 20px;
-        font-size: 30px;
-    }
-
-    .icon > button {
-        margin-left: 20px;
-        margin-top: 20px;
-    }
 }
-
 
 @media screen and (max-width: 480px) {
     body {
@@ -552,12 +489,16 @@ ul{
         display: block;
     }
 
-    .right > img {
-        width: 200px;
+    .short {
+        font-size: 24px;
     }
 
-    .work {
-        font-size: 30px;
+    .long {
+        font-size: 14px;
+    }
+
+    .right > img {
+        width: 200px;
     }
 
     .task1, .task2 input, .message1 > input {
@@ -579,6 +520,3 @@ ul{
         margin: 10px;
     }
 }
-
-
-
